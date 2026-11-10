@@ -12,15 +12,15 @@ console.log(titulo.textContent);
 titulo.textContent = "Editado desde javascript"
 titulo.style.color = "peru";
 titulo.style.background = "green";
-titulo.stylefontSize = "1.5rem;";
+titulo.style.fontSize = "1.5rem;";
 titulo.textContent = "texto nuevo";
 
-titulo.textContent = titulo.textContent + "Texto nuevo";
-titulo.textContent += "otro texto nuevo";
+titulo.textContent = titulo.textContent + " Texto nuevo";
+titulo.textContent += " otro texto nuevo";
 
 let parrafo = document.querySelector("#parrafopr");
 
-parrafo.innerHTML += "nuevo texto <i> pero este esta en cursivas </i>";
+parrafo.innerHTML += " nuevo texto <i> pero este esta en cursivas </i>";
 
 let caja1 = document.querySelector("#caja1");
 
@@ -44,7 +44,7 @@ const bodega = [
     {nombre: "producto 5", precio: 450, stock: 5}
 ]
 
-let caja = document.querySelector("cajavacia")
+let caja = document.querySelector(".caja-vacia")
 
 bodega.forEach(item => {
     let clasecolor = "";
@@ -59,7 +59,7 @@ bodega.forEach(item => {
 
     caja.innerHTML += `
     <div class = "cajaproducto ${clasecolor}">
-    <h2>PRoducto: ${item.nombre}</h2>
+    <h2>Producto: ${item.nombre}</h2>
     <p>Precio: $ ${item.precio}</p>
     <p>stock:  ${item.stock}</p>
 
